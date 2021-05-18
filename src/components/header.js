@@ -1,12 +1,18 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import TeaField from '../images/tea-header.jpg';
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: `rebeccapurple`,
+      background: ` #257425`,
+      background: `url(${TeaField})`,
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       marginBottom: `1.45rem`,
+      
     }}
   >
     <div
@@ -16,7 +22,11 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 
+        style={{ 
+          margin: 0 
+        }}
+      >
         <Link
           to="/"
           style={{
